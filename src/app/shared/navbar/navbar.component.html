@@ -2,8 +2,8 @@
     <div class="container">
         <div class="navbar-translate">
             <div class="navbar-header">
-                <a class="navbar-brand " [routerLink]="['/presentation']">Auctum</a>
-                <!-- <img src="assets/img/auctum-logo.jpeg"> -->
+                <!-- <a class="navbar-brand " [routerLink]="['/presentation']">Auctum</a> -->
+                <img src="assets/img/auctum-logo.png">
             </div>
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar bar1"></span>
@@ -12,11 +12,28 @@
             </button>
         </div>
         <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-                <a routerLink="" class="btn btn-link btn-neutral">Home</a>
-                <a routerLink="/about-us" class="btn btn-link btn-neutral">About Us</a>
-                <a routerLink="/our-services" class="btn btn-link btn-neutral">Services</a>
-                <a routerLink="/contact-us" class="btn btn-link btn-neutral">Contact Us</a>
+            <!-- <ul class="navbar-nav ml-auto">
+                <a class="navbar-brand " [routerLink]="['/presentation']">Auctum</a>
+                <a class="navbar-brand "  routerLink="" class="btn btn-link ">Home</a>
+                <a class="navbar-brand "  routerLink="/about-us" class="btn btn-link btn-neutral">About Us</a>
+                <a class="navbar-brand "  routerLink="/our-services" class="btn btn-link btn-neutral">Services</a>
+                <a class="navbar-brand "  routerLink="/contact-us" class="btn btn-link btn-neutral">Contact Us</a>
+            
+            </ul> -->
+
+            <ul  class="navbar-nav ml-auto">
+                <div ngbDropdown class="nav-item dropdown">
+                    <div outerLinkActive="custom-active-link" class="nav-link" routerLink="/landing" >Home</div> 
+                </div>
+                <div  ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link" routerLink="/about-us" >About Us</div> 
+                </div>
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link" routerLink="/our-services" >Services</div> 
+                </div>
+                <div ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link" routerLink="/contact-us" >Contact Us</div> 
+                </div>
             </ul>
         </div>
     </div>
