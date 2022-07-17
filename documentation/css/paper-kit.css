@@ -5200,7 +5200,7 @@ video {
 }
 
 .icon-primary {
-  color: #51cbce;
+  color: var(--primary);
 }
 
 .icon-info {

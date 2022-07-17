@@ -7,12 +7,20 @@ import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-
+import { LandingComponent } from './pages/landing/landing.component';
+import { AOS } from 'aos';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { OurServicesComponent } from './pages/our-services/our-services.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent
+        NavbarComponent,
+        LandingComponent,
+        AboutUsComponent,
+        OurServicesComponent,
+        ContactUsComponent
     ],
     imports: [
         BrowserAnimationsModule,
